@@ -20,7 +20,7 @@ const CHECKINS = ['12:00', '13:00', '14:00'];
 const CHECKOUTS = ['12:00', '13:00', '14:00'];
 const FEATURES = ['wift','wishaser','parking','washer','elevator','conditioner'];
 const DESCRIPTIONS = ['Все четко','Хорошая квартира не дорого','Огромный дом для тусы'];
-const PHOTOS = ['Ссылка1', 'Ссылка2', 'Ссылка3'];
+const PHOTOS = ['img/avatars/default.png'];
 const LOCATION = {x: [35.555, 36.666], y: [105.555, 106.666]};
 
 
@@ -38,7 +38,7 @@ const createRandomOffers = (length) => {
 
       offer: {
         title: getRandomArrayElement(TITLES),
-        address: '{{location.x}}, {{location.y}}',
+        address: `${location.x}, ${location.y}`,
         price: getRandomArbitrary(10, 1000),
         type: getRandomArrayElement(TYPES),
         rows: getRandomArbitrary(1, 10),
@@ -61,7 +61,5 @@ const createRandomOffers = (length) => {
 };
 
 const offers = createRandomOffers(10);
-// eslint-disable-next-line no-console
-console.log(offers);
 
-export {createRandomOffers, offers};
+export {createRandomOffers};

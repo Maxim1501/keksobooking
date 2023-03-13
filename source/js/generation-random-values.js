@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 
-//Функция возврата случайного числа
+//Функция возвращает случайное число
 
-const getRandomArbitrary = function (min, max) { // возвращает любое число в диопазоне
+const getRandomArbitrary = function (min, max) { 
   return Math.floor(Math.random() * (max - min) + min);  
 };
 
-//Функция на максимальную длину строки
+//Функция возвращает максимальную длину строки
 
 const checkMaxLengthString = function (string, maxLength) {
   if (string.length > maxLength) {
@@ -17,7 +17,7 @@ const checkMaxLengthString = function (string, maxLength) {
 };
 
 
-//Функция число с плавающей точкой из диапазона от.до с указанным количеством знаков после запятой
+//Функция возвращает число с плавающей точкой из диапазона от.до с указанным количеством знаков после запятой
 
 const getRandomArbitraryQaString = function (min, max, qualityNumber) {
   const randomValue = Math.random() * (max - min) + min;
@@ -29,7 +29,9 @@ const getRandomArbitraryQaString = function (min, max, qualityNumber) {
   return randomValue.toFixed(qualityNumber);
 };
 
-const getRandomArrayElement = function (array) { // возвражает случайное значение в массиве 
+// Функция возвращает случайное значение в массиве
+
+const getRandomArrayElement = function (array) {  
   const randomIndex = getRandomArbitrary(0, array.length-1);
   return array[randomIndex];
 };
