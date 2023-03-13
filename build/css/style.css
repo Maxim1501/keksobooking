@@ -56,7 +56,6 @@ fieldset {
   border: 0;
 }
 
-
 /* Карта с объявлениями
    ========================================================================== */
 
@@ -88,7 +87,6 @@ fieldset {
   height: 500px;
   background-color: #dddddd;
 }
-
 
 /**
  * Фильтры объявления
@@ -174,7 +172,7 @@ fieldset {
   background-position: 2px 5px;
 }
 
-.map__checkbox:checked+.map__feature--wifi {
+.map__checkbox:checked + .map__feature--wifi {
   background-position: 2px -172px;
 }
 
@@ -182,7 +180,7 @@ fieldset {
   background-position: 2px -25px;
 }
 
-.map__checkbox:checked+.map__feature--dishwasher {
+.map__checkbox:checked + .map__feature--dishwasher {
   background-position: 2px -202px;
 }
 
@@ -190,7 +188,7 @@ fieldset {
   background-position: 3px -55px;
 }
 
-.map__checkbox:checked+.map__feature--parking {
+.map__checkbox:checked + .map__feature--parking {
   background-position: 2px -232px;
 }
 
@@ -198,7 +196,7 @@ fieldset {
   background-position: 2px -85px;
 }
 
-.map__checkbox:checked+.map__feature--washer {
+.map__checkbox:checked + .map__feature--washer {
   background-position: 2px -262px;
 }
 
@@ -206,7 +204,7 @@ fieldset {
   background-position: 2px -143px;
 }
 
-.map__checkbox:checked+.map__feature--elevator {
+.map__checkbox:checked + .map__feature--elevator {
   background-position: 2px -321px;
 }
 
@@ -214,7 +212,7 @@ fieldset {
   background-position: 3px -114px;
 }
 
-.map__checkbox:checked+.map__feature--conditioner {
+.map__checkbox:checked + .map__feature--conditioner {
   background-position: 2px -291px;
 }
 
@@ -224,7 +222,7 @@ fieldset {
 }
 
 .map__feature:focus,
-.map__checkbox:focus+.map__feature {
+.map__checkbox:focus + .map__feature {
   -webkit-box-shadow: 0 0 2px 2px #ff6547;
   box-shadow: 0 0 2px 2px #ff6547;
 }
@@ -235,12 +233,11 @@ fieldset {
   background-color: #ff6547;
 }
 
-.map__checkbox:checked+.map__feature {
+.map__checkbox:checked + .map__feature {
   background-color: #ff6547;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
 }
-
 
 /* Форма для публикации объявления
    ========================================================================== */
@@ -259,13 +256,15 @@ fieldset {
 }
 
 .marker {
-  background-image: url('/build/img/main-pin.svg');
+  background-image: url("/img/main-pin.svg");
   background-repeat: no-repeat;
+  background-position: center center;
   width: 60px;
   height: 50px;
   position: absolute;
-  left: 48%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .ad-form {
@@ -351,7 +350,7 @@ fieldset {
 }
 
 .ad-form-header__drop-zone:focus,
-.ad-form-header__input:focus+.ad-form-header__drop-zone {
+.ad-form-header__input:focus + .ad-form-header__drop-zone {
   color: #ff5635;
   -webkit-box-shadow: 0 0 2px 2px #ff6547;
   box-shadow: 0 0 2px 2px #ff6547;
@@ -461,12 +460,12 @@ fieldset {
 }
 
 .feature:focus,
-.feature__checkbox:focus+.feature {
+.feature__checkbox:focus + .feature {
   -webkit-box-shadow: 0 0 2px 2px #ff6547;
   box-shadow: 0 0 2px 2px #ff6547;
 }
 
-.feature__checkbox:checked+.feature {
+.feature__checkbox:checked + .feature {
   background-color: #ff6547;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
@@ -496,31 +495,31 @@ fieldset {
   background-position: 17px -217px;
 }
 
-.feature__checkbox:checked+.feature {
+.feature__checkbox:checked + .feature {
   background-color: #ff5635;
 }
 
-.feature__checkbox:checked+.feature--wifi {
+.feature__checkbox:checked + .feature--wifi {
   background-position: 17px -297px;
 }
 
-.feature__checkbox:checked+.feature--dishwasher {
+.feature__checkbox:checked + .feature--dishwasher {
   background-position: 17px -339px;
 }
 
-.feature__checkbox:checked+.feature--parking {
+.feature__checkbox:checked + .feature--parking {
   background-position: 17px -382px;
 }
 
-.feature__checkbox:checked+.feature--washer {
+.feature__checkbox:checked + .feature--washer {
   background-position: 17px -423px;
 }
 
-.feature__checkbox:checked+.feature--elevator {
+.feature__checkbox:checked + .feature--elevator {
   background-position: 17px -505px;
 }
 
-.feature__checkbox:checked+.feature--conditioner {
+.feature__checkbox:checked + .feature--conditioner {
   background-position: 17px -464px;
 }
 
@@ -578,7 +577,7 @@ fieldset {
 }
 
 .ad-form__drop-zone:focus,
-.ad-form__input:focus+.ad-form__drop-zone {
+.ad-form__input:focus + .ad-form__drop-zone {
   color: #ff5635;
   -webkit-box-shadow: 0 0 2px 2px #ff6547;
   box-shadow: 0 0 2px 2px #ff6547;
@@ -652,7 +651,6 @@ fieldset {
   -webkit-box-shadow: 0 0 2px 2px #ff6547;
   box-shadow: 0 0 2px 2px #ff6547;
 }
-
 
 /* Футер
    ========================================================================== */
@@ -771,7 +769,6 @@ fieldset {
   -webkit-box-shadow: 0 0 2px 2px #ff6547;
   box-shadow: 0 0 2px 2px #ff6547;
 }
-
 
 /* Вспомогательные экраны
    ========================================================================== */
@@ -931,7 +928,6 @@ fieldset {
 .popup__photo:hover {
   border: 2px solid #ff5635;
 }
-
 
 /**
  * Сообщения об успешном и неуспешном создании объявления
