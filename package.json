@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "css-loader": "5.1.1",
-    "style-loader": "2.0.0"
+    "style-loader": "2.0.0",
+    "ymaps": "^0.2.1"
   }
 }
