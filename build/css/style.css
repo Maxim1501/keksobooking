@@ -2,24 +2,24 @@
    ========================================================================== */
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
 
   color: #353535;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
 
   background-color: #f0f0ea;
@@ -160,7 +160,7 @@ fieldset {
   cursor: pointer;
 
   background-color: #f8f8f8;
-  background-image: url("../img/sprite-feature.svg");
+  background-image: url('../img/sprite-feature.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px 345px;
@@ -256,7 +256,7 @@ fieldset {
 }
 
 .marker {
-  background-image: url("/img/main-pin.svg");
+  background-image: url('/img/main-pin.svg');
   background-repeat: no-repeat;
   background-position: center center;
   width: 60px;
@@ -380,7 +380,7 @@ fieldset {
 .ad-form__element textarea {
   width: calc(100% - 20px);
 
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 18px;
 
   height: 42px;
@@ -436,7 +436,7 @@ fieldset {
   border-radius: 3px;
 
   background-color: #fafafa;
-  background-image: url("../img/sprite-feature.svg");
+  background-image: url('../img/sprite-feature.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 35px 600px;
@@ -716,7 +716,7 @@ fieldset {
 
   font-size: 0;
 
-  background-image: url("../img/sprite-social.svg");
+  background-image: url('../img/sprite-social.svg');
   background-repeat: no-repeat;
   background-size: 29px 274px;
 
@@ -824,7 +824,7 @@ fieldset {
   line-height: 40px;
 
   display: block;
-  content: "×";
+  content: '×';
 
   color: #000000;
 }
@@ -879,7 +879,7 @@ fieldset {
 
   font-size: 0;
 
-  background-image: url("../img/sprite-feature.svg");
+  background-image: url('../img/sprite-feature.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px 345px;
@@ -966,7 +966,7 @@ fieldset {
 
 .success__message::before,
 .error__message::before {
-  content: "";
+  content: '';
   position: absolute;
 
   top: -150px;
@@ -975,7 +975,7 @@ fieldset {
   width: 109px;
   height: 122px;
 
-  background-image: url("../img/muffin-white.svg");
+  background-image: url('../img/muffin-white.svg');
   background-position: center;
   background-repeat: no-repeat;
 
@@ -985,7 +985,7 @@ fieldset {
 }
 
 .error__message::before {
-  background-image: url("../img/muffin-red.svg");
+  background-image: url('../img/muffin-red.svg');
 }
 
 .error__button {

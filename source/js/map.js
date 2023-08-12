@@ -1,19 +1,19 @@
-import ymaps from "ymaps";
+import ymaps from 'ymaps';
 
 function init(maps) {
   let map = new maps.Map(
-    "map",
+    'map',
     {
       center: [55.819543, 37.611619],
       zoom: 10,
     },
     {
-      searchControlProvider: "yandex#search",
+      searchControlProvider: 'yandex#search',
     }
   );
 
-  const markerElement = document.querySelector(".marker");
-  console.log("markerElement", markerElement);
+  const markerElement = document.querySelector('.marker');
+  console.log('markerElement', markerElement);
   const dragger = new maps.util.Dragger({
     // Драггер будет автоматически запускаться при нажатии на элемент 'marker'.
     autoStartElement: markerElement,
@@ -23,12 +23,12 @@ function init(maps) {
   let markerOffset, markerPosition;
 
   dragger.events
-    .add("start", onDraggerStart)
-    .add("move", onDraggerMove)
-    .add("stop", onDraggerEnd);
+    .add('start', onDraggerStart)
+    .add('move', onDraggerMove)
+    .add('stop', onDraggerEnd);
 
   function onDraggerStart(event) {
-    const position = event.get("position");
+    const position = event.get('position');
     // Сохраняем смещение маркера относительно точки начала драга.
     markerOffset = [
       position[0] - markerElement.offsetLeft,
@@ -75,7 +75,7 @@ function init(maps) {
     if (containsPoint(mapGlobalPixelBounds, markerGlobalPosition)) {
       // Теперь переводим глобальные пиксельные координаты в геокоординаты с учетом текущего уровня масштабирования карты.
       let geoPosition = map.options
-        .get("projection")
+        .get('projection')
         .fromGlobalPixels(markerGlobalPosition, map.getZoom());
       // Получаем уровень зума карты.
       const zoom = map.getZoom();
@@ -87,18 +87,18 @@ function init(maps) {
       );
       alert(
         [
-          "Координаты: " + geoPosition,
-          "Уровень зума: " + zoom,
-          "Глобальные пиксельные координаты: " + markerGlobalPosition,
-          "Координаты тайла: " + tileCoordinates,
-        ].join(" ")
+          'Координаты: ' + geoPosition,
+          'Уровень зума: ' + zoom,
+          'Глобальные пиксельные координаты: ' + markerGlobalPosition,
+          'Координаты тайла: ' + tileCoordinates,
+        ].join(' ')
       );
     }
   }
 
   function applyDelta(event) {
     // Поле 'delta' содержит разницу между положениями текущего и предыдущего события драггера.
-    let delta = event.get("delta");
+    let delta = event.get('delta');
     markerPosition[0] += delta[0];
     markerPosition[1] += delta[1];
     applyMarkerPosition();
@@ -131,4 +131,4 @@ ymaps
   .then((maps) => {
     init(maps);
   })
-  .catch((err) => console.log("error", err));
+  .catch((err) => console.log('error', err));
