@@ -1,2 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import {createRandomOffers, offers} from './generation-random-object.js';
+// import { disabledForm } from "./form-disabled.js";
+import { similarPopups } from "./generation-similar-popup.js";
+import "./map.js";
